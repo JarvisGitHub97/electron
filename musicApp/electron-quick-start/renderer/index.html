@@ -6,6 +6,9 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+
     <title>本地播放器</title>
   </head>
   <body>
@@ -14,6 +17,14 @@
       <button type="button" id="add-music" class="btn btn-primary btn-lg btn-block mt-4">
         添加歌曲到曲库
       </button>
+      <div id="tracksList" class="mt-4"></div>
+    </div>
+    <div class="container fixed-bottom bg-white pb-3">
+      <hr/>
+      <div class="row my-2" id="player-status"></div>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" id="player-progress"></div>
+      </div>
     </div>
     <script src="./index.js">
     </script>

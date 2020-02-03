@@ -28,6 +28,10 @@ class DataStore extends Store {
     this.tracks = [...this.tracks, ...tracksWithProps]
     return this.saveTracks()
   }
+  deleteTracks(deletedId) {
+    this.tracks = this.tracks.filter(item => item.id !== deletedId)
+    return this.saveTracks()
+  }
 }
 
 module.exports = DataStore
